@@ -10,7 +10,13 @@ class PostsController < ApplicationController
 
   # GET /posts/1
   def show
+     @post = Post.find(params[:id])
     render json: @post
+    respond_to do |format|
+    format.html
+    format.json { render json: @post}
+
+end
   end
 
   # POST /posts

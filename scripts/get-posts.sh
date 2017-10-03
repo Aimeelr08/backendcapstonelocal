@@ -1,10 +1,14 @@
 #!/bin/bash
 
 API="${API_ORIGIN:-https://backendcapstone.herokuapp.com}"
-URL_PATH="/examples"
+URL_PATH="/posts"
 curl "${API}${URL_PATH}" \
   --include \
   --request GET \
-  --header "Authorization: Token token=$TOKEN"
+  --data '{
+      "title": "'"${TEXT}"'",
+      "body": "'"${TEXT}"'"
+    }
+  }'
 
 echo
