@@ -18,3 +18,14 @@ post_attributes = [
 post_attributes.each do |attributes|
   Post.where(attributes).first_or_create
 end
+
+comment_attributes = [
+  { content: "comment 1" },
+  { content: "comment 2" },
+  { content: "comment 3" },
+  { content: "This is the best!"},
+]
+
+comment_attributes.each do |attributes|
+  Comment.where(attributes).first_or_create
+end
