@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 Rails.application.routes.draw do
-  # resources :comments
-  # resources :posts
+  resources :comments
+  resources :posts
   # please fix this TODO
   # root to: "posts#new"
   # root :to => "posts#index", only: [:get, :show]
