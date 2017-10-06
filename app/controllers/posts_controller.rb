@@ -15,8 +15,7 @@ class PostsController < ApplicationController
     respond_to do |format|
     format.html
     format.json { render json: @post}
-
-end
+    end
   end
 
   # POST /posts

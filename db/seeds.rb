@@ -20,10 +20,10 @@ post_attributes.each do |attributes|
 end
 
 comment_attributes = [
-  { content: "comment 1" },
-  { content: "comment 2" },
-  { content: "comment 3" },
-  { content: "This is the best!"},
+  { content: "comment 1", post_id: Post.first.id },
+  { content: "comment 2", post_id: Post.first.id },
+  { content: "comment 3", post_id: Post.first.id },
+  { content: "This is the best!", post_id: Post.last.id },
 ]
 
 comment_attributes.each do |attributes|
