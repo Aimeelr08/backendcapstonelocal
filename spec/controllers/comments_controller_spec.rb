@@ -51,21 +51,21 @@ RSpec.describe CommentsController, type: :controller do
       expect(assigns(:comment)).to eq(comment)
     end
   end
-  #
-  # describe "GET #new" do
-  #   it "assigns a new comment as @comment" do
-  #     get :new, params: {}, session: valid_session
-  #     expect(assigns(:comment)).to be_a_new(Comment)
-  #   end
-  # end
-  #
-  # describe "GET #edit" do
-  #   it "assigns the requested comment as @comment" do
-  #     comment = Comment.create! valid_attributes
-  #     get :edit, params: {id: comment.to_param}, session: valid_session
-  #     expect(assigns(:comment)).to eq(comment)
-  #   end
-  # end
+
+  describe "GET #new" do
+    it "assigns a new comment as @comment" do
+      get :new, params: {}, session: valid_session
+      expect(assigns(:comment)).to be_a_new(Comment)
+    end
+  end
+
+  describe "GET #edit" do
+    it "assigns the requested comment as @comment" do
+      comment = Comment.create! valid_attributes
+      get :edit, params: {id: comment.to_param}, session: valid_session
+      expect(assigns(:comment)).to eq(comment)
+    end
+  end
 
   describe "POST #create" do
     context "with valid params" do

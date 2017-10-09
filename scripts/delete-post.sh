@@ -2,10 +2,11 @@
 API="${API_ORIGIN:-http://localhost:4741/}"
 
 # API="${API_ORIGIN:-https://backendcapstone.herokuapp.com}"
-URL_PATH="/examples"
-curl "${API}${URL_PATH}" \
+URL_PATH="/posts"
+curl "${API}${URL_PATH}/${ID}" \
   --include \
-  --request GET \
+  --request DELETE \
+  --header "Content-Type: application/json" \
   --header "Authorization: Token token=$TOKEN"
 
 echo
