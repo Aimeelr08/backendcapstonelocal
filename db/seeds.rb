@@ -9,10 +9,9 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 post_attributes = [
-  { title: "Sample Title 1", body: "Sample body 1" },
-  { title: "Sample Title 2", body: "Sample body 2" },
-  { title: "Sample Title 3", body: "Sample body 3" },
-  { title: "Another Post", body: "WOW!" },
+  { title: "First Post", body: "today was a good day that I had a good time listening to music." },
+  { title: "Study Post", body: "time to get a dent into the study workload" },
+  { title: "Lovely Post", body: "what a beautiful and lovely person that person is" },
 ]
 
 post_attributes.each do |attributes|
@@ -20,9 +19,8 @@ post_attributes.each do |attributes|
 end
 
 comment_attributes = [
-  { content: "comment 1", post_id: Post.first.id },
-  { content: "comment 2", post_id: Post.first.id },
-  { content: "comment 3", post_id: Post.first.id },
+  { content: "that is great music skills", post_id: Post.first.id },
+  { content: "that sounds dull and need to work on other skills", post_id: Post.first.id },
   { content: "This is the best!", post_id: Post.last.id },
 ]
 
