@@ -6,8 +6,9 @@ curl "${API}${URL_PATH}" \
   --include \
   --request GET \
   --data '{
-      "content": "'"${CONTENT}"'",
-    }
-  }'
+    "comment": {
+        "content": "'"${CONTENT}"'",
+ }
+}'
 
 echo
