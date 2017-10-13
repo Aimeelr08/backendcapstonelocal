@@ -6,7 +6,7 @@ curl "${API}${URL_PATH}" \
   --include \
   --request GET \
   --data '{
-      "content": "'"${TEXT}"'",
+      "content": "'"${CONTENT}"'",
     }
   }'
 
