@@ -7,6 +7,7 @@ curl "${API}${URL_PATH}" \
   --request GET \
   --data '{
   "post": {
+     "id": "'"${ID}"'",
       "title": "'"${TITLE}"'",
       "body": "'"${BODY}"'"
     }

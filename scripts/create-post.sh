@@ -10,6 +10,7 @@ curl "${API}${URL_PATH}" \
   --header "Content-Type: application/json" \
   --data '{
   "post": {
+        "id":"'"${ID}"'",
         "title": "'"${TITLE}"'",
         "body": "'"${BODY}"'"
       }
