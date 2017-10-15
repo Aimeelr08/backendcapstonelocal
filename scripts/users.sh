@@ -1,5 +1,5 @@
 #!/bin/bash
-API="${API_ORIGIN:-https://backendcapstone.herokuapp.com}"
+API="${API_ORIGIN:-https://backendcapstonelocal.herokuapp.com}"
 
 # API="${API_ORIGIN:-http://localhost:4741}"
 URL_PATH="/users"
