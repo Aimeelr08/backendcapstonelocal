@@ -7,7 +7,7 @@ curl "${API}${URL_PATH}" \
   --request GET \
   --data '{
     "comment": {
-        "content": "'"${CONTENT}"'",
+        "content": "'"${CONTENT}"'"
  }
 }'
 

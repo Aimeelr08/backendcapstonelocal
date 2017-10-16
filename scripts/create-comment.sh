@@ -10,19 +10,12 @@ curl "${API}${URL_PATH}" \
   --header "Authorization: Token token=$TOKEN" \
   --data '{
     "comment": {
-        "content": "'"${CONTENT}"'",
+        "content": "'"${CONTENT}"'"
+
  }
 }'
 
-# {
-# "id": 1,
-# "content": "comment 1",
-#  "post": {
-#   "id": 1,
-#   "title": "Sample Title 1",
-#   "body": "Sample body 1"
-#  }
-# }
+
 
 
 echo
