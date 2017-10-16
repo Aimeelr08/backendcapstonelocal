@@ -12,14 +12,12 @@ Rails.application.routes.draw do
   post '/posts' => 'posts#create'
   post '/posts' => 'posts#update'
   delete '/posts' => 'posts#destroy'
-  patch '/posts' => 'posts#update'
 
   # making routes to comments
   get '/comments' => 'comments#index'
   post '/comments' => 'comments#create'
   post '/comments' => 'comments#update'
   delete '/comments' => 'comments#destroy'
-  patch '/comments' => 'comments#update'
   # # making routes to forms
   resources :examples, except: [:new, :edit]
   post '/sign-up' => 'users#signup'
